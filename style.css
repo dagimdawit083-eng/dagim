@@ -110,25 +110,20 @@ section {
   color: #ffffff;
   text-align: center;
 }
-
-
 #about p {
   display: flex;
   flex-direction: row;
-  align-items: justify; /* vertically center */
+  align-items: center; /* vertically center */
   gap: 20px; /* space between image and text */
   color: #ffffff;
 }
 
 #about p img {
-  display: flex;
-   flex-direction: row;
   border-radius: 10px;
   width: 200px; /* adjust as needed */
   height: auto;
- text-align: justify;
+ text-align: left;
 }
-
 
 #contact h2{
     color: #ffffff;
@@ -309,6 +304,7 @@ ul li:hover {
   border-radius: 8px;  
   object-fit: contain;
 }
+
 
 
 
