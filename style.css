@@ -110,19 +110,50 @@ section {
   color: #ffffff;
   text-align: center;
 }
-#about p {
+#about {
   display: flex;
-  flex-direction: row;
-  text-align:justify;
-  gap: 20px; /* space between image and text */
-  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  color: white;
 }
 
-#about p img {
-  border-radius: 10px;
-  width: 200px; /* adjust as needed */
+#about img {
+  width: 300px;
   height: auto;
- text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Keep text readable */
+#about h2 {
+  width: 100%;
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+#about p {
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* Responsive for phones */
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about img {
+    width: 80%;
+  }
+
+  #about p {
+    max-width: 90%;
+    text-align: justify;
+  }
 }
 #contact h2{
     color: #ffffff;
@@ -303,6 +334,7 @@ ul li:hover {
   border-radius: 8px;  
   object-fit: contain;
 }
+
 
 
 
