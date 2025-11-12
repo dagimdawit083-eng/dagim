@@ -113,7 +113,7 @@ section {
 #about p {
   display: flex;
   flex-direction: row;
-  align-items: center; /* vertically center */
+  text-align:justify;
   gap: 20px; /* space between image and text */
   color: #ffffff;
 }
@@ -303,6 +303,7 @@ ul li:hover {
   border-radius: 8px;  
   object-fit: contain;
 }
+
 
 
 
