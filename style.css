@@ -115,23 +115,20 @@ section {
 #about p {
   display: flex;
   flex-direction: row;
-  align-items: center; /* vertically center */
+  align-items: justify; /* vertically center */
   gap: 20px; /* space between image and text */
   color: #ffffff;
 }
 
 #about p img {
+  display: flex;
+   flex-direction: row;
   border-radius: 10px;
   width: 200px; /* adjust as needed */
   height: auto;
- text-align: left;
+ text-align: justify;
 }
-/* Responsive for phones */
-@media (max-width: 768px) {
-  #about {
-    flex-direction: column;
-    text-align: center;
-  }
+
 
 #contact h2{
     color: #ffffff;
@@ -312,6 +309,7 @@ ul li:hover {
   border-radius: 8px;  
   object-fit: contain;
 }
+
 
 
 
