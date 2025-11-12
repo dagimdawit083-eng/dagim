@@ -1,0 +1,299 @@
+/* Reset and base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+.background {
+ background-color: #070a28;
+ background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Full-page background image with overlay */
+.background-overlay {
+  position: relative;
+  background-image: url('image/background.jpg'); /* Update path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Optional dark overlay for readability */
+.background-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(4, 4, 27, 0.5); /* Adjust opacity here */
+  z-index: 0;
+}
+
+/* Ensure content is above overlay */
+common-header,
+common-footer,
+header {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  color: rgb(255, 108, 50);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Social icons */
+.icons a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 0 20px;
+  transition: color 0.3s;
+  transition: transform 0.3s ease;
+
+}
+
+.icons a:hover {
+  color: #ff5e00;
+  transform: scale(1.2);
+
+}
+
+/* Navigation links */
+nav {
+  text-align: center;
+  padding: 20px;
+}
+
+nav a {
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: #ffffff;
+  margin: 0 30px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  transform: scale(1.2);
+  color: #ff5e00;
+}
+
+/* Section layout */
+section {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Optional image styling */
+#about h2{
+  color: #ffffff;
+  text-align: center;
+}
+#about p {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* vertically center */
+  gap: 20px; /* space between image and text */
+  color: #ffffff;
+}
+
+#about p img {
+  border-radius: 10px;
+  width: 200px; /* adjust as needed */
+  height: auto;
+ text-align: left;
+}
+#contact h2{
+    color: #ffffff;
+    text-align: center;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+header h1, header h2 {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+body {
+  background-color: #070a28; /* your actual background */
+  opacity: 0;
+  animation: fadeInPage 1s ease-in forwards;
+}
+
+@keyframes fadeInPage {
+ from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+  }
+
+
+header h1, header h2 {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+.background-overlay {
+  animation: zoomIn 5s ease-in-out forwards;
+}
+
+.education-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #ff5e00;
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.edu-box {
+  border: 1.5px solid #ff5e00;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: left;
+  background-color: #171923;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.edu-box p{
+    color: #ffffff;
+}
+.edu-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(255, 94, 0, 0.3);
+}
+
+.edu-box h2 {
+  color: #ff5e00;
+  margin-bottom: 10px;
+}
+
+.edu-box p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+strong {
+  color: #ffb347;
+}
+
+#project {
+    text-align: center;
+}
+#project h2{
+    color: #ffffff;
+    text-align: center;
+}
+
+.project {
+    margin-top: 20px;
+}
+
+.pdf-button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.pdf-button:hover {
+    background: #0056b3;
+}
+
+#skills h2 {
+  color: #ffffff;
+  text-align: center;
+}
+#skills h3 {
+  color: #ff5e00;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+ul li {
+  background-color: #171923;
+  border: 1px solid #ff5e00;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 6px 0;
+  color: #fff;
+  text-align: left;
+  transition: 0.3s;
+}
+
+ul li:hover {
+  background-color: #ff5e00;
+  color: #000;
+}
+
+.project1 {
+  border: 1.5px solid #ff5e00;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: left;
+  background-color: #171923;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project1 img{
+
+    height: 220px ;
+}
+.project2 {
+  border: 1.5px solid #ff5e00;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: left;
+  background-color: #171923;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project2 img{
+
+    height: 220px ;
+}
